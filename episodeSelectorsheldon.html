@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young Sheldon - Season 1</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #1e1e1e;
+            color: white;
+            overflow-y: auto;
+        }
+        .sidebar img {
+            width: 100%;
+            height: auto;
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .episode-list {
+            list-style: none;
+            padding: 0;
+        }
+        .episode-list li {
+            padding: 15px;
+            border-bottom: 1px solid #444;
+            cursor: pointer;
+            text-align: center;
+        }
+        .episode-list li:hover {
+            background-color: #444;
+        }
+        .iframe-container {
+            flex: 1;
+            background-color: #000;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+    <script>
+        function loadEpisode(link) {
+            document.getElementById('videoFrame').src = link;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <img src="https://img.cdno.my.id/thumb/w_160/h_240/young-sheldon-season-1-1627749900.jpg" alt="Young Sheldon - Season 1">
+            <h2>Season 1</h2>
+            <ul class="episode-list">
+                <li onclick="loadEpisode('https://mcloud.vvid30c.site/watch/?v11#Ty81OW8vTlhUUmZTOWxYVTFvZmpNZnRTSUZ0L0ZhMzFYdE1MdnlsOExmZGp2OFBhcFdQbkJPUFVFTnNJcnNDcExjNXkrdmNBUGVFPQ')">Episode 1</li>
+                <li onclick="loadEpisode('https://mcloud.vvid30c.site/watch/?v12#TVJJOEc3ajRsZkhibzdFRGNVNHBMS1hFUDdady9RNjJJRWIydHExSU42eHQ4bSswSUorUHNody9yd0h2cU52ZHZHUEFrMks4bGNzPQ')">Episode 2</li>
+                <li onclick="loadEpisode('https://mcloud.vvid30c.site/watch/?v13#VGs2R1NwWGswMVFLTDVjSGJSMjlqQWF5LzJlUWo1V1h5TmppWWgycW1mdWgrTklPd0Q2OXBtMGg2M3Q3T1VYYUVhWWFBQWFVZkZVPQ')">Episode 3</li>
+                <li onclick="loadEpisode('https://mcloud.vvid30c.site/watch/?v14#dVdWUXU0bjZQRHQ2dVNIejV5NXhHYnYxeVdpMDNvME5neDlTbzBFVVErM1ZPUXZSeTkwQmlra1ZyTFVRcUpuUVU3VWRLZ1ZXajlvPQ')">Episode 4</li>
+                <li onclick="loadEpisode('https://mcloud.vvid30c.site/watch/?v15#bmx6Z0FVY1paaUNiTllaMDBJam96a0RKZzE0SEw0YktCM2Z5bmhTK3E2M3ZrNldRUkR0WlliT1lKVlFnT1p0SDdYVi95VFpjalNVPQ')">Episode 5</li>
+                <li onclick="loadEpisode('https://mcloud.vvid30c.site/watch/?v16#WGRPWEpEYThSTDVySElkRmxLYXNiMUFVMk1RVDEvTkFHUVpzMnNFQ1pSUHZhVzdFSE0wWGtPQUJmS1IvVStoZzdzMit4MHhDdTY4PQ')">Episode 6</li>
+                <li onclick="loadEpisode('https://mcloud.vvid30c.site/watch/?v17#Y1NwZXY4a0dCWnZTSnJvVEtzSDdZTXBVSXJXdDdsRWJyY0phNWtGU1QrZUVWYXVUWWtsdmVObWpEdGFBQTV2RkpHelAxY1lBdERjPQ')">Episode 7</li>
+                <li onclick="loadEpisode('https://mcloud.vvid30c.site/watch/?v18#OUk5dng4YmpOMTUyNEFnQVhKbGRmSEVTVTZ1dklGSmRXVS9CZllMVEQvRWExdUw1MFdWYzdFaEMvb0FZQVBLbU95a0dOZ2E5UGEwPQ')">Episode 8</li>
+            </ul>
+        </div>
+        <!-- Video Player -->
+        <div class="iframe-container">
+            <iframe id="videoFrame" src="" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
