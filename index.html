@@ -3,24 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>123Flix - Home</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>123Flix</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #141414;
+      color: white;
+      margin: 0;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #1f1f1f;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+    }
+    .logo:hover {
+      text-decoration: underline;
+    }
+    .container {
+      padding: 20px;
+      text-align: center;
+    }
+    .movie {
+      display: inline-block;
+      margin: 20px;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+    }
+    .movie img {
+      width: 160px;
+      height: 240px;
+      border-radius: 10px;
+    }
+    .movie:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
-    <a href="https://outspokenlol.github.io/" class="logo">123Flix</a>
+  <header>
+    <a href="index.html" class="logo">123Flix</a>
   </header>
-  <main class="main-content">
-    <div class="movie-card">
-      <a href="season1.html">
-        <img src="https://img.cdno.my.id/thumb/w_160/h_240/stranger-things-season-1-1630855259.webp" 
-          alt="Stranger Things Season 1">
-        <h2>Stranger Things Season 1</h2>
-      </a>
-    </div>
-  </main>
-  <footer class="footer">
-    <p>&copy; 2025 123Flix. All rights reserved.</p>
-  </footer>
+  <div class="container">
+    <a href="episodeSelector.html" class="movie">
+      <img src="https://img.cdno.my.id/thumb/w_160/h_240/stranger-things-season-1-1630855259.webp" alt="Stranger Things Season 1">
+      <h3>Stranger Things: Season 1</h3>
+    </a>
+  </div>
 </body>
 </html>
